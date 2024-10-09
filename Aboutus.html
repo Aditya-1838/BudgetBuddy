@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Budget manger</title>
+   
+    <link rel="stylesheet" href="output.css" />
+</head>
+<body>
+  <!-- nav  -->
+  <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
+    <a href="index.html" id="brand" class="flex gap-2 items-center flex-1">
+        <img class="object-cover max-w-120 max-h-12" src="assets/asset 0.svg" alt="Logo" />
+
+    </a>
+    <div id="nav-menu" class="hidden lg:flex gap-12">
+        <a href="" class="font-medium hover:text-primary">Home</a>
+        <a href="dashboard.html" class="font-medium hover:text-primary">Dashboard</a>
+        <a href="getstrated.html" class="font-medium hover:text-primary">Start Budgeting</a>
+        <a href="reports.html" class="font-medium hover:text-primary">Reports</a>
+        <a href="Aboutus.html" class="font-medium hover:text-primary">AboutUs</a>
+
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end">
+        <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+
+            <span class="font-display font-medium">Login/SignUp</span>
+
+        </button>
+    </div>
+
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between">
+            <a href="#" id="brand" class="flex gap-2 items-center">
+                <img class="object-cover max-w-120 max-h-12" src="assets/asset 0.svg" alt="Logo" />
+
+            </a>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-xmark text-gray-600"></i>
+            </button>
+        </div>
+        <div class="mt-6">
+            <a href="" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+            <a href="dashboard.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Dashboard</a>
+            <a href="getstrated.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Start Budgeting</a>
+            <a href="reports.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Reports</a>
+            <a href="Aboutus.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">AboutUs</a>
+        </div>
+        <div class="h-[1px] bg-gray-300"></div>
+        <button class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
+
+            <span>Login/SignUp</span>
+        </button>
+    </div>
+</nav>
+
+
+     <!-- Hero Section -->
+     <style>
+      /* Keyframes for glittering effect */
+      @keyframes glitter {
+        0% {
+          opacity: 0.8;
+          text-shadow: 0 0 10px #e5e5e5, 0 0 20px #f3e9a8, 0 0 30px #ffdf00;
+        }
+        50% {
+          opacity: 1;
+          text-shadow: 0 0 15px #ffffff, 0 0 25px #f8d774, 0 0 35px #ffd700;
+        }
+        100% {
+          opacity: 0.8;
+          text-shadow: 0 0 10px #e5e5e5, 0 0 20px #f3e9a8, 0 0 30px #ffdf00;
+        }
+      }
+  
+      /* Tailwind utility for applying the animation */
+      .animate-glitter {
+        animation: glitter 2s infinite ease-in-out;
+      }
+    </style>
+  <section class=" bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-extrabold mb-4">About Us</h1>
+      <p class="text-lg max-w-2xl mx-auto animate-glitter">We are dedicated to helping you manage your finances with ease. Learn more about our mission, vision, and the team behind BudgetBuddy.</p>
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Our Mission</h2>
+      <p class="text-lg  max-w-4xl mx-auto animate-glitter">Our mission is to provide a comprehensive and intuitive platform that allows individuals to take control of their financial health. We strive to offer tools and insights that empower you to make informed decisions and achieve your financial goals.</p>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Meet the Team</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs mx-auto border border-gray-200">
+          <i class="fa-regular fa-user"  alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4"></i>
+       
+          <h3 class="text-xl font-semibold">SAA VICTIM</h3>
+          <p class="text-gray-600">Developer</p>
+          <p class="mt-2 animate-glitter">We developed this to simplify budgeting and tracking financial activities, helping users manage their money effortlessly and make informed financial decisions.</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs mx-auto border border-gray-200">
+
+          <i class="fa-regular fa-user"  alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold">To Be Decided</h3>
+          <p class="text-gray-600">Future Contributers</p>
+          <p class="mt-2 animate-glitter">Lorem ipsum dolor sit amet consddectetur adipisicing elit. Tenetur, nulla numquam! Magni aliquam perspiciatis illo officia unde omnis nemo ad blanditiis dddd.</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs mx-auto border border-gray-200">
+
+          <i class="fa-regular fa-user"  alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold">To Be Decided</h3>
+          <p class="text-gray-600">Future Contributers</p>
+          <p class="mt-2 animate-glitter">Lorem ipsum dolor sit amet consddectetur adipisicing elit. Tenetur, nulla numquam! Magni aliquam perspiciatis illo officia unde omnis nemo ad blanditiis dddd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-4">Have questions or feedback? Feel free to reach out to us via email or follow us on social media.</p>
+      <div class="flex justify-center gap-6">
+        <a href="mailto:contact@budgetbuddy.com" class="text-blue-500 hover:underline">Email Us</a>
+        <a href="#" class="text-blue-500 hover:underline">Follow Us on Twitter</a>
+        <a href="#" class="text-blue-500 hover:underline">Follow Us on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Optional) -->
+ <nav>
+  <div class="container text-center">
+    <p>&copy; 2024 BudgetBuddy. All rights reserved.</p>
+    <a href="Aboutus.html">AboutUs</a>
+     <p>Team BudgetBuddy</p>
+</div>
+ </nav>
+   
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
